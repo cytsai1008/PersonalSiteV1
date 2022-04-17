@@ -55,6 +55,14 @@ export default {
       const route = useRoute();
       return route.path === "/projects" ? "is-active" : "";
     },
+    currentAboutPathText() {
+      const route = useRoute();
+      return route.path === "/about" ? " " : " About ";
+    },
+    currentAboutPathActive() {
+      const route = useRoute();
+      return route.path === "/about" ? "is-active" : "";
+    },
   },
 };
 </script>
@@ -98,6 +106,12 @@ export default {
               <a class="item" v-bind:class="currentProjPathActive">
                 <span class="ts-icon is-file-code-icon"></span>
                 {{ currentProjPathText }}
+              </a>
+            </RouterLink>
+            <RouterLink to="/about">
+              <a class="item" v-bind:class="currentAboutPathActive">
+                <span class="ts-icon is-circle-info-icon"></span>
+                {{ currentAboutPathText }}
               </a>
             </RouterLink>
           </div>
