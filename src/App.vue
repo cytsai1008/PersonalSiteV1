@@ -3,8 +3,8 @@
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "@/components/HelloWorld.vue";
 */
-import "tocas/dist/tocas.min.css";
-import "tocas/dist/tocas.min.js";
+//import "tocas/dist/tocas.min.css";
+//import "tocas/dist/tocas.min.js";
 // import { Head } from "@vueuse/head";
 </script>
 
@@ -96,19 +96,25 @@ export default {
       <div class="ts-container">
         <div class="ts-row is-relaxed is-evenly-divided is-center-aligned">
           <div class="ts-tab is-center-aligned is-secondary">
-            <RouterLink to="/">
+            <RouterLink to="/" style="text-decoration: none; color: inherit">
               <a class="item" v-bind:class="currentHomePathActive">
                 <span class="ts-icon is-house-icon"></span>
                 {{ currentHomePathText }}
               </a>
             </RouterLink>
-            <RouterLink to="/projects">
+            <RouterLink
+              to="/projects"
+              style="text-decoration: none; color: inherit"
+            >
               <a class="item" v-bind:class="currentProjPathActive">
                 <span class="ts-icon is-file-code-icon"></span>
                 {{ currentProjPathText }}
               </a>
             </RouterLink>
-            <RouterLink to="/about">
+            <RouterLink
+              to="/about"
+              style="text-decoration: none; color: inherit"
+            >
               <a class="item" v-bind:class="currentAboutPathActive">
                 <span class="ts-icon is-circle-info-icon"></span>
                 {{ currentAboutPathText }}
@@ -122,7 +128,23 @@ export default {
 
   <RouterView />
 </template>
-<style></style>
+<!--
+<style>
+.logo {
+  margin-bottom: 1rem;
+}
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.nav {
+  margin-top: 1rem;
+}
+.nav a {
+  margin-right: 1rem;
+}
+</style>
+-->
 <!--
 <style>
 @import "@/assets/base.css";
