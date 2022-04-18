@@ -98,7 +98,9 @@ export default {
           <div class="ts-tab is-center-aligned is-secondary">
             <RouterLink to="/" style="text-decoration: none; color: inherit">
               <a class="item" v-bind:class="currentHomePathActive">
-                <span class="ts-icon is-house-icon"></span>
+                <span class="ts-icon is-house-icon">
+                  <!--Why house regular icon is paid QAQ-->
+                </span>
                 {{ currentHomePathText }}
               </a>
             </RouterLink>
@@ -116,7 +118,9 @@ export default {
               style="text-decoration: none; color: inherit"
             >
               <a class="item" v-bind:class="currentAboutPathActive">
-                <span class="ts-icon is-circle-info-icon"></span>
+                <span class="ts-icon is-circle-info-icon">
+                  <!--Paid icon too... -->
+                </span>
                 {{ currentAboutPathText }}
               </a>
             </RouterLink>
@@ -125,8 +129,9 @@ export default {
       </div>
     </nav>
   </header>
-
-  <RouterView />
+  <div class="ts-placeholder is-loading">
+    <RouterView />
+  </div>
 </template>
 <!--
 <style>
