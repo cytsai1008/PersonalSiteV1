@@ -129,8 +129,12 @@ export default {
       </div>
     </nav>
   </header>
-  <div class="ts-placeholder is-loading">
-    <RouterView />
+  <div class="ts-container is-fluid">
+    <div class="ts-center">
+      <div class="ts-placeholder is-loading">
+        <RouterView />
+      </div>
+    </div>
   </div>
 </template>
 <!--

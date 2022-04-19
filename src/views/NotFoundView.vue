@@ -1,4 +1,10 @@
+<script setup>
+import { Head } from "@vueuse/head";
+</script>
 <template>
+  <Head>
+    <title>HTTP 404</title>
+  </Head>
   <main>
     <div></div>
     <svg
