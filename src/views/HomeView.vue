@@ -18,9 +18,9 @@ import { Head } from "@vueuse/head";
       <div class="ts-image is-circular is-small">
         <img src="../assets/sk-head.png" />
       </div>
-      <div class="ts-space is-small"></div>
-      <div class="ts-header is-heavy is-massive">Hi, I'm Saito Kenichi</div>
       <div class="ts-space"></div>
+      <div class="ts-header is-heavy is-massive">Hi, I'm Saito Kenichi</div>
+      <div class="ts-space is-small"></div>
       <div class="ts-header is-heavy is-big">
         A high school student / <br />
         Amateur programmer
