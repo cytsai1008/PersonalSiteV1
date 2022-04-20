@@ -20,7 +20,10 @@ import { Head } from "@vueuse/head";
       </div>
       -->
       <div class="ts-header is-heavy is-massive">Hi, I'm Saito Kenichi</div>
-      <div class="ts-header is-heavy is-big">
+      <div class="ts-header is-heavy is-big is-not-minimal">
+        A high school student / Amateur programmer
+      </div>
+      <div class="ts-header is-heavy is-minimal">
         A high school student / Amateur programmer
       </div>
     </div>
