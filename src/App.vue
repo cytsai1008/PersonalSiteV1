@@ -41,7 +41,7 @@ export default {
   computed: {
     currentHomePathText() {
       const route = useRoute();
-      return route.path === "/" ? " " : " Home ";
+      return route.path === "/" ? "" : "Home";
     },
     currentHomePathActive() {
       const route = useRoute();
@@ -49,7 +49,7 @@ export default {
     },
     currentProjPathText() {
       const route = useRoute();
-      return route.path === "/projects" ? " " : " Projects ";
+      return route.path === "/projects" ? "" : "Projects";
     },
     currentProjPathActive() {
       const route = useRoute();
@@ -57,7 +57,7 @@ export default {
     },
     currentAboutPathText() {
       const route = useRoute();
-      return route.path === "/about" ? " " : " About ";
+      return route.path === "/about" ? "" : "About";
     },
     currentAboutPathActive() {
       const route = useRoute();
