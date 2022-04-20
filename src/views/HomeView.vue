@@ -14,17 +14,16 @@ import { Head } from "@vueuse/head";
     <TheWelcome />
     -->
     <div class="ts-center">
-      <!--
+      <div class="ts-space is-big"></div>
       <div class="ts-image is-circular is-small">
-        <img src="./image.png" />
+        <img src="../assets/sk-head.png" />
       </div>
-      -->
+      <div class="ts-space is-small"></div>
       <div class="ts-header is-heavy is-massive">Hi, I'm Saito Kenichi</div>
-      <div class="ts-header is-heavy is-big is-not-minimal">
-        A high school student / Amateur programmer
-      </div>
-      <div class="ts-header is-heavy is-minimal">
-        A high school student / Amateur programmer
+      <div class="ts-space"></div>
+      <div class="ts-header is-heavy is-big">
+        A high school student / <br />
+        Amateur programmer
       </div>
     </div>
   </main>

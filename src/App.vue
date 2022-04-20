@@ -93,9 +93,11 @@ export default {
     </div>
     -->
     <nav>
+      <div class="ts-space is-small"></div>
       <div class="ts-container">
         <div class="ts-row is-relaxed is-evenly-divided is-center-aligned">
-          <div class="ts-tab is-center-aligned is-secondary">
+          <div class="ts-tab is-center-aligned">
+            <!-- ts-app-navbar is-unlabeled -->
             <RouterLink to="/" style="text-decoration: none; color: inherit">
               <a class="item" v-bind:class="currentHomePathActive">
                 <span class="ts-icon is-house-icon">
