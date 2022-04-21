@@ -13,7 +13,7 @@ import { Head } from "@vueuse/head";
     <!--
     <TheWelcome />
     -->
-    <div class="ts-divider is-section"></div>
+    <!--<div class="ts-divider is-section"></div>-->
     <div class="ts-container is-fluid is-narrow" id="Introduce">
       <div class="ts-center">
         <div class="ts-space is-big"></div>
@@ -30,11 +30,39 @@ import { Head } from "@vueuse/head";
       </div>
     </div>
     <div class="ts-divider is-section"></div>
-    <div class="ts-container is-fluid is-narrow" id="Projs">
+    <div class="ts-container is-fluid is-narrow" id="Repos">
       <div class="ts-center">
         <div class="ts-space"></div>
-        <div class="ts-header is-heavy is-large is-start-icon">
-          Below is some of my
+        <div class="ts-grid is-evenly-divided is-stackable">
+          <div class="column">
+            <div class="ts-image is-rounded is-2-by-1 is-covered">
+              <img
+                src="https://opengraph.githubassets.com/8c7ac0246ac7497315ae5018b49d3aadefdf62df6d576cb8181b4181e03cd1b2/PixelGameMaker/PixelRPG-Python"
+                style="max-width: 250px"
+              />
+            </div>
+          </div>
+          <div class="column">
+            <div class="ts-image is-rounded is-2-by-1 is-covered">
+              <img
+                src="https://opengraph.githubassets.com/18922ec22639cd55ecd602ee8382bae770e5f4d4a2b2ad210a2875d351efd36b/cytsai1008/What-For-Next-Meal"
+                style="max-width: 250px"
+              />
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="ts-image is-rounded is-2-by-1 is-covered">
+              <img
+                src="https://opengraph.githubassets.com/d1d9c2d8f1a3adc38087a9bf384d8e5c8e06dca112d73e76d9b6f40283f1de19/cytsai1008/DiscordVoice"
+                style="max-width: 250px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="ts-space"></div>
+        <div class="ts-header is-heavy is-large">
+          for more projects please visit my
         </div>
         <div class="ts-header is-heavy is-large is-start-icon">
           <a
@@ -45,7 +73,6 @@ import { Head } from "@vueuse/head";
           </a>
         </div>
         <div class="ts-space is-small"></div>
-        <div class="ts-header is-heavy is-big"></div>
       </div>
     </div>
   </main>
@@ -54,8 +81,5 @@ import { Head } from "@vueuse/head";
 <style>
 #Introduce {
   width: 100vw;
-  /*
-  background-color: #14439b;
-  */
 }
 </style>
