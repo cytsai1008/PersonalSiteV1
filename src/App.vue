@@ -152,6 +152,15 @@ export default {
           2022
         </div>
         <div class="item">
+          <a
+            href="https://www.github.com/cytsai1008/cytsai1008.github.io"
+            target="_blank"
+            class="ts-text is-undecorated"
+          >
+            Source Code
+          </a>
+        </div>
+        <div class="item">
           Powered by
           <a
             href="https://v4.tocas-ui.com"
@@ -288,7 +297,7 @@ header {
 }
 footer {
   background-color: var(--ts-gray-100);
-  height: 5rem;
+  height: 5.5rem;
 }
 RouterLink {
   color: inherit;
