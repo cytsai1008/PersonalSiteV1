@@ -46,9 +46,8 @@ function generateSRC(UserName, Repo) {
         <div class="ts-space"></div>
         <div class="ts-header is-heavy is-massive">Hi, I'm CYTsai</div>
         <div class="ts-space is-small"></div>
-        <div class="ts-header is-heavy is-big">
-          A high school student / <br />
-          Amateur programmer
+        <div class="ts-header is-heavy is-big" style="text-align: center">
+          A high school student / Amateur programmer
         </div>
       </div>
     </div>
@@ -56,11 +55,11 @@ function generateSRC(UserName, Repo) {
     <div class="ts-container is-fluid is-narrow" id="Repos">
       <div class="ts-center">
         <div class="ts-space"></div>
-        <div class="ts-header is-heavy is-large">
+        <div class="ts-header is-heavy is-large" style="text-align: center">
           My Mainly Contributed Repositories
         </div>
         <div class="ts-space is-large"></div>
-        <div class="ts-grid is-stackable is-3-columns">
+        <div class="ts-grid is-stackable is-2-columns">
           <div class="column">
             <RouterLink to="/projects/PRPG-PY">
               <div class="ts-image is-rounded is-2-by-1 is-covered gh-column">
@@ -97,6 +96,20 @@ function generateSRC(UserName, Repo) {
                   <div class="image" style="width: 250px; height: 125px">
                     <img
                       :src="generateSRC('cytsai1008', 'DiscordVoice')"
+                      style="max-width: 250px"
+                    />
+                  </div>
+                </div>
+              </div>
+            </RouterLink>
+          </div>
+          <div class="column">
+            <RouterLink to="/projects/GH-Pages">
+              <div class="ts-image is-rounded is-2-by-1 is-covered gh-column">
+                <div class="ts-placeholder is-loading is-rounded">
+                  <div class="image" style="width: 250px; height: 125px">
+                    <img
+                      :src="generateSRC('cytsai1008', 'cytsai1008.github.io')"
                       style="max-width: 250px"
                     />
                   </div>
