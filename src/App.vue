@@ -260,4 +260,8 @@ nav a:first-of-type {
 header {
   background-color: var(--ts-gray-100);
 }
+RouterLink {
+  color: inherit;
+  text-decoration: none;
+}
 </style>

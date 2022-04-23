@@ -56,46 +56,56 @@ function generateSRC(UserName, Repo) {
     <div class="ts-container is-fluid is-narrow" id="Repos">
       <div class="ts-center">
         <div class="ts-space"></div>
-        <div class="ts-grid is-stackable">
-          <div class="column is-5-wide">
-            <div class="ts-image is-rounded is-2-by-1 is-covered">
-              <div class="ts-placeholder is-loading is-rounded">
-                <div class="image" style="width: 250px; height: 125px">
-                  <img
-                    :src="generateSRC('PixelGameMaker', 'PixelRPG-Python')"
-                    style="max-width: 250px"
-                  />
+        <div class="ts-header is-heavy is-large">
+          My Mainly Contributed Repositories
+        </div>
+        <div class="ts-space is-large"></div>
+        <div class="ts-grid is-stackable is-3-columns">
+          <div class="column">
+            <RouterLink to="/projects/PRPG-PY">
+              <div class="ts-image is-rounded is-2-by-1 is-covered gh-column">
+                <div class="ts-placeholder is-loading is-rounded">
+                  <div class="image" style="width: 250px; height: 125px">
+                    <img
+                      :src="generateSRC('PixelGameMaker', 'PixelRPG-Python')"
+                      style="max-width: 250px"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
+            </RouterLink>
           </div>
-          <div class="column is-5-wide">
-            <div class="ts-image is-rounded is-2-by-1 is-covered">
-              <div class="ts-placeholder is-loading is-rounded">
-                <div class="image" style="width: 250px; height: 125px">
-                  <img
-                    :src="generateSRC('cytsai1008', 'What-For-Next-Meal')"
-                    style="max-width: 250px"
-                  />
+          <div class="column">
+            <RouterLink to="/projects/WFNM">
+              <div class="ts-image is-rounded is-2-by-1 is-covered gh-column">
+                <div class="ts-placeholder is-loading is-rounded">
+                  <div class="image" style="width: 250px; height: 125px">
+                    <img
+                      :src="generateSRC('cytsai1008', 'What-For-Next-Meal')"
+                      style="max-width: 250px"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
+            </RouterLink>
           </div>
 
-          <div class="column is-5-wide">
-            <div class="ts-image is-rounded is-2-by-1 is-covered">
-              <div class="ts-placeholder is-loading is-rounded">
-                <div class="image" style="width: 250px; height: 125px">
-                  <img
-                    :src="generateSRC('cytsai1008', 'DiscordVoice')"
-                    style="max-width: 250px"
-                  />
+          <div class="column">
+            <RouterLink to="/projects/DV">
+              <div class="ts-image is-rounded is-2-by-1 is-covered gh-column">
+                <div class="ts-placeholder is-loading is-rounded">
+                  <div class="image" style="width: 250px; height: 125px">
+                    <img
+                      :src="generateSRC('cytsai1008', 'DiscordVoice')"
+                      style="max-width: 250px"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
+            </RouterLink>
           </div>
         </div>
-        <div class="ts-space"></div>
+        <div class="ts-space is-big"></div>
         <div class="ts-header is-heavy is-large">
           for more projects please visit my
         </div>
@@ -108,6 +118,17 @@ function generateSRC(UserName, Repo) {
           </a>
         </div>
         <div class="ts-space is-small"></div>
+        <div class="ts-header is-heavy is-large is-start-icon">
+          <RouterLink
+            to="/projects"
+            style="text-decoration: none; color: inherit"
+          >
+            <div class="ts-text is-undecorated">
+              <span class="ts-icon is-file-code-icon"></span>
+              Projects
+            </div>
+          </RouterLink>
+        </div>
       </div>
     </div>
   </main>
@@ -116,5 +137,14 @@ function generateSRC(UserName, Repo) {
 <style>
 #Introduce {
   width: 100vw;
+}
+
+.gh-column:hover {
+  transform: scale(1.5);
+  z-index: 999;
+}
+RouterLink {
+  color: inherit;
+  text-decoration: none;
 }
 </style>
