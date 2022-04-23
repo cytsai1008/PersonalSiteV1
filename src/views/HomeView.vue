@@ -120,15 +120,7 @@ function generateSRC(UserName, Repo) {
         </div>
         <div class="ts-space is-big"></div>
         <div class="ts-header is-heavy is-large">
-          for more projects please visit my
-        </div>
-        <div class="ts-header is-heavy is-large is-start-icon">
-          <a
-            href="http://www.github.com/cytsai1008"
-            class="ts-text is-undecorated is-external-link"
-            target="_blank"
-            ><span class="ts-icon is-github-icon"></span>GitHub Repos
-          </a>
+          For more projects please visit
         </div>
         <div class="ts-space is-small"></div>
         <div class="ts-header is-heavy is-large is-start-icon">
@@ -141,6 +133,14 @@ function generateSRC(UserName, Repo) {
               Projects
             </div>
           </RouterLink>
+        </div>
+        <div class="ts-header is-heavy is-large is-start-icon">
+          <a
+            href="http://www.github.com/cytsai1008"
+            class="ts-text is-undecorated is-external-link"
+            target="_blank"
+            ><span class="ts-icon is-github-icon"></span>GitHub Repos
+          </a>
         </div>
       </div>
     </div>
