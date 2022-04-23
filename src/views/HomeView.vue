@@ -5,6 +5,25 @@ import TheWelcome from "@/components/TheWelcome.vue";
 import { Head } from "@vueuse/head";
 </script>
 
+<script>
+// generate random number
+function randomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+function generateSRC(UserName, Repo) {
+  const randomNum = randomNumber(10000000, 1000000000000);
+  return (
+    "https://opengraph.githubassets.com/" +
+    randomNum +
+    "/" +
+    UserName +
+    "/" +
+    Repo
+  );
+}
+</script>
+
 <template>
   <Head>
     <title>Home</title>
@@ -17,8 +36,12 @@ import { Head } from "@vueuse/head";
     <div class="ts-container is-fluid is-narrow" id="Introduce">
       <div class="ts-center">
         <div class="ts-space is-big"></div>
-        <div class="ts-image is-circular is-small">
-          <img src="../assets/sk-head.png" />
+        <div class="ts-placeholder is-loading">
+          <div class="image" style="border-radius: 100rem">
+            <div class="ts-image is-circular is-small">
+              <img src="../assets/sk-head.png" />
+            </div>
+          </div>
         </div>
         <div class="ts-space"></div>
         <div class="ts-header is-heavy is-massive">Hi, I'm CYTsai</div>
@@ -33,30 +56,42 @@ import { Head } from "@vueuse/head";
     <div class="ts-container is-fluid is-narrow" id="Repos">
       <div class="ts-center">
         <div class="ts-space"></div>
-        <div class="ts-grid is-evenly-divided is-stackable">
-          <div class="column">
+        <div class="ts-grid is-stackable">
+          <div class="column is-5-wide">
             <div class="ts-image is-rounded is-2-by-1 is-covered">
-              <img
-                src="https://opengraph.githubassets.com/8c7ac0246ac7497315ae5018b49d3aadefdf62df6d576cb8181b4181e03cd1b2/PixelGameMaker/PixelRPG-Python"
-                style="max-width: 250px"
-              />
+              <div class="ts-placeholder is-loading is-rounded">
+                <div class="image" style="width: 250px; height: 125px">
+                  <img
+                    :src="generateSRC('PixelGameMaker', 'PixelRPG-Python')"
+                    style="max-width: 250px"
+                  />
+                </div>
+              </div>
             </div>
           </div>
-          <div class="column">
+          <div class="column is-5-wide">
             <div class="ts-image is-rounded is-2-by-1 is-covered">
-              <img
-                src="https://opengraph.githubassets.com/18922ec22639cd55ecd602ee8382bae770e5f4d4a2b2ad210a2875d351efd36b/cytsai1008/What-For-Next-Meal"
-                style="max-width: 250px"
-              />
+              <div class="ts-placeholder is-loading is-rounded">
+                <div class="image" style="width: 250px; height: 125px">
+                  <img
+                    :src="generateSRC('cytsai1008', 'What-For-Next-Meal')"
+                    style="max-width: 250px"
+                  />
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="column">
+          <div class="column is-5-wide">
             <div class="ts-image is-rounded is-2-by-1 is-covered">
-              <img
-                src="https://opengraph.githubassets.com/d1d9c2d8f1a3adc38087a9bf384d8e5c8e06dca112d73e76d9b6f40283f1de19/cytsai1008/DiscordVoice"
-                style="max-width: 250px"
-              />
+              <div class="ts-placeholder is-loading is-rounded">
+                <div class="image" style="width: 250px; height: 125px">
+                  <img
+                    :src="generateSRC('cytsai1008', 'DiscordVoice')"
+                    style="max-width: 250px"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
