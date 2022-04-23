@@ -133,11 +133,37 @@ export default {
   </header>
   <div class="ts-container is-fluid">
     <div class="ts-center">
-      <div class="ts-placeholder is-loading">
-        <RouterView />
-      </div>
+      <RouterView />
     </div>
   </div>
+  <div class="ts-space is-large"></div>
+  <footer>
+    <div class="ts-center">
+      <div class="ts-meta is-center-aligned">
+        <div class="item">
+          ©
+          <a
+            href="https://www.github.com/cytsai1008"
+            target="_blank"
+            class="ts-text is-undecorated"
+          >
+            CYTsai
+          </a>
+          2022
+        </div>
+        <div class="item">
+          Powered by
+          <a
+            href="https://v4.tocas-ui.com"
+            target="_blank"
+            class="ts-text is-undecorated is-external-link"
+          >
+            Tocas UI
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </template>
 <!--
 <style>
@@ -259,6 +285,10 @@ nav a:first-of-type {
 <style>
 header {
   background-color: var(--ts-gray-100);
+}
+footer {
+  background-color: var(--ts-gray-100);
+  height: 5rem;
 }
 RouterLink {
   color: inherit;
