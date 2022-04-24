@@ -39,27 +39,29 @@ function generateSRC(UserName, Repo) {
         <div class="ts-divider is-section" id="about-proj-divider"></div>
         <div class="ts-space is-small"></div>
         <!-- box -->
-        <RouterLink
-          to="/projects/PRPG-PY"
-          style="color: inherit !important; text-decoration: none !important"
-        >
-          <div class="ts-box">
-            <div class="ts-image gh-box-img">
-              <div class="ts-placeholder is-loading is-rounded">
-                <div class="image gh-box-img">
-                  <img
-                    :src="generateSRC('PixelGameMaker', 'PixelRPG-Python')"
-                  />
+        <div class="ts-grid is-evenly-divided">
+          <RouterLink
+            to="/projects/PRPG-PY"
+            style="color: inherit !important; text-decoration: none !important"
+          >
+            <div class="ts-box">
+              <div class="ts-image gh-box-img">
+                <div class="ts-placeholder is-loading is-rounded">
+                  <div class="image gh-box-img">
+                    <img
+                      :src="generateSRC('PixelGameMaker', 'PixelRPG-Python')"
+                    />
+                  </div>
                 </div>
               </div>
+              <div class="ts-space is-large is-minimal-only"></div>
+              <div class="ts-content">
+                <div class="ts-header is-heavy">PixelRPG-Python</div>
+                <p>A Pixel Art Game Based on PyGame Engine and PySide2</p>
+              </div>
             </div>
-            <div class="ts-space is-large is-minimal-only"></div>
-            <div class="ts-content">
-              <div class="ts-header is-heavy">PixelRPG-Python</div>
-              <p>A Pixel Art Game Based on PyGame Engine and PySide2</p>
-            </div>
-          </div>
-        </RouterLink>
+          </RouterLink>
+        </div>
       </div>
     </div>
   </main>
