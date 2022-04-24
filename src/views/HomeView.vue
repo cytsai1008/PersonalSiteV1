@@ -159,6 +159,8 @@ function generateSRC(UserName, Repo) {
 .gh-column:hover {
   transform: scale(1.5);
   z-index: 999;
+  box-shadow: 5px 5px 5px #aaaaaa;
+  border-radius: 0.4rem !important;
 }
 RouterLink {
   color: inherit;
