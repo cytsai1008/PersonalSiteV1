@@ -53,6 +53,7 @@ function generateSRC(UserName, Repo) {
                 </div>
               </div>
             </div>
+            <div class="ts-space is-large is-minimal-only"></div>
             <div class="ts-content">
               <div class="ts-header is-heavy">PixelRPG-Python</div>
               <p>A Pixel Art Game Based on PyGame Engine and PySide2</p>
