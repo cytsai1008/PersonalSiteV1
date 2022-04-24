@@ -51,7 +51,7 @@ function generateSRC(UserName, Repo) {
         </div>
       </div>
     </div>
-    <div class="ts-divider is-section"></div>
+    <div class="ts-divider is-section" id="about-proj-divider"></div>
     <div class="ts-container is-fluid is-narrow" id="Repos">
       <div class="ts-center">
         <div class="ts-space"></div>
@@ -149,6 +149,10 @@ function generateSRC(UserName, Repo) {
 
 <style>
 #Introduce {
+  width: 100vw;
+}
+
+#about-proj-divider {
   width: 100vw;
 }
 

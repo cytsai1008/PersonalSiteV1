@@ -49,19 +49,19 @@ export default {
     },
     currentProjPathText() {
       const route = useRoute();
-      return route.path === "/projects" ? "" : "Projects";
+      return route.path.includes("/projects") ? "" : "Projects";
     },
     currentProjPathActive() {
       const route = useRoute();
-      return route.path === "/projects" ? "is-active" : "";
+      return route.path.includes("/projects") ? "is-active" : "";
     },
     currentAboutPathText() {
       const route = useRoute();
-      return route.path === "/about" ? "" : "About";
+      return route.path.includes("/about") ? "" : "About";
     },
     currentAboutPathActive() {
       const route = useRoute();
-      return route.path === "/about" ? "is-active" : "";
+      return route.path.includes("/about") ? "is-active" : "";
     },
   },
 };

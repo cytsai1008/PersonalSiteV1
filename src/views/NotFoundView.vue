@@ -22,7 +22,10 @@ import { Head } from "@vueuse/head";
         <div class="ts-header is-heavy is-big">Page Not Found</div>
         <div class="ts-space is-small"></div>
         <RouterLink to="/" style="text-decoration: none; color: inherit">
-          <div class="ts-text is-heavy is-undecorated">Go Home</div>
+          <div class="ts-text is-heavy is-undecorated is-start-icon">
+            <span class="ts-icon is-house-icon"></span>
+            Go Home
+          </div>
         </RouterLink>
       </div>
     </div>
