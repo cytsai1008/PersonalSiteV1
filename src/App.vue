@@ -146,9 +146,8 @@ export default {
             href="https://www.github.com/cytsai1008"
             target="_blank"
             class="ts-text is-undecorated"
+            >CYTsai</a
           >
-            CYTsai
-          </a>
           2022
         </div>
         <div class="item">
@@ -156,9 +155,8 @@ export default {
             href="https://www.github.com/cytsai1008/cytsai1008.github.io"
             target="_blank"
             class="ts-text is-undecorated"
+            >Source Code</a
           >
-            Source Code
-          </a>
         </div>
         <div class="item">
           Powered by
@@ -166,9 +164,8 @@ export default {
             href="https://v4.tocas-ui.com"
             target="_blank"
             class="ts-text is-undecorated is-external-link"
+            >Tocas UI</a
           >
-            Tocas UI
-          </a>
         </div>
       </div>
     </div>
