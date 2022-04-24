@@ -38,25 +38,27 @@ function generateSRC(UserName, Repo) {
         <div class="ts-space is-small"></div>
         <div class="ts-divider is-section" id="about-proj-divider"></div>
         <div class="ts-space is-small"></div>
-        <div class="ts-grid is-stackable is-2-columns">
-          <div class="ts-column">
-            <div class="ts-image is-rounded is-2-by-1 is-covered">
+        <!-- box -->
+        <RouterLink
+          to="/projects/PRPG-PY"
+          style="color: inherit !important; text-decoration: none !important"
+        >
+          <div class="ts-box">
+            <div class="ts-image gh-box-img">
               <div class="ts-placeholder is-loading is-rounded">
-                <div class="image" style="width: 250px; height: 125px">
+                <div class="image gh-box-img">
                   <img
                     :src="generateSRC('PixelGameMaker', 'PixelRPG-Python')"
-                    style="max-width: 250px"
                   />
                 </div>
               </div>
             </div>
-          </div>
-          <div class="ts-column">
-            <div class="ts-container is-fluid">
-              <div class="ts-header is-heavy is-large">PixelRPG-Python</div>
+            <div class="ts-content">
+              <div class="ts-header is-heavy">PixelRPG-Python</div>
+              <p>A Pixel Art Game Based on PyGame Engine and PySide2</p>
             </div>
           </div>
-        </div>
+        </RouterLink>
       </div>
     </div>
   </main>
@@ -71,14 +73,23 @@ function generateSRC(UserName, Repo) {
   width: 100vw;
 }
 
-.gh-column:hover {
-  transform: scale(1.5);
-  z-index: 999;
-  box-shadow: 5px 5px 5px #aaaaaa;
-  border-radius: 0.4rem !important;
+.gh-box-img {
+  width: 450px;
+  height: 225px;
 }
+
+@media only screen and (max-width: 768px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  .gh-box-img {
+    width: auto;
+    height: auto;
+    max-width: 450px !important;
+    max-height: 225px !important;
+  }
+}
+
 RouterLink {
-  color: inherit;
-  text-decoration: none;
+  color: inherit !important;
+  text-decoration: none !important;
 }
 </style>
