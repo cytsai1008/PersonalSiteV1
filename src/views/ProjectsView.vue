@@ -95,4 +95,12 @@ RouterLink {
   color: inherit !important;
   text-decoration: none !important;
 }
+
+.ts-box {
+  transition: box-shadow 0.3s;
+  float: left;
+}
+.ts-box:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
 </style>

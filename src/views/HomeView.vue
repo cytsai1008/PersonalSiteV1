@@ -156,8 +156,13 @@ function generateSRC(UserName, Repo) {
   width: 100vw;
 }
 
+.gh-column {
+  transition: box-shadow 0.3s;
+  transition: transform 0.2s;
+}
+
 .gh-column:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
   z-index: 999;
   box-shadow: 5px 5px 5px #aaaaaa;
   border-radius: 0.4rem !important;
