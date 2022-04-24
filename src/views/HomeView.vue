@@ -159,12 +159,13 @@ function generateSRC(UserName, Repo) {
 .gh-column {
   transition: box-shadow 0.3s;
   transition: transform 0.2s;
+  float: left;
 }
 
 .gh-column:hover {
   transform: scale(1.2);
   z-index: 999;
-  box-shadow: 5px 5px 5px #aaaaaa;
+  box-shadow: 0 0 15px #aaaaaa;
   border-radius: 0.4rem !important;
 }
 RouterLink {
