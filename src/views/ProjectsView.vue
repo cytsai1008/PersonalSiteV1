@@ -101,6 +101,6 @@ RouterLink {
   float: left;
 }
 .ts-box:hover {
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px #aaaaaa;
 }
 </style>
