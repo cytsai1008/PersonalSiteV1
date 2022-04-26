@@ -301,3 +301,6 @@ RouterLink {
   text-decoration: none;
 }
 </style>
+<!--
+https://stackoverflow.com/questions/53334384/how-to-make-fixed-navbar-with-vue-js
+-->

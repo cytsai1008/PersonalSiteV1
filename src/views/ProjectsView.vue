@@ -61,6 +61,7 @@ function generateSRC(UserName, Repo) {
               </div>
             </div>
           </RouterLink>
+          <!-- Rewrite into web components someday -->
         </div>
       </div>
     </div>
