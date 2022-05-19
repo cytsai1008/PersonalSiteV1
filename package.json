@@ -11,7 +11,7 @@
     "@vueuse/head": "0.7.6",
     "pinia": "2.0.14",
     "tocas": "4.0.3",
-    "vue": "3.2.33",
+    "vue": "3.2.34",
     "vue-fixed-header": "3.2.15",
     "vue-router": "4.0.15"
   },
