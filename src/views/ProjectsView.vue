@@ -42,7 +42,7 @@ function generateSRC(UserName, Repo) {
       </div>
     </div>
     <div class="ts-container is-fluid">
-
+      <!-- tailwind grid -->
     </div>
   </main>
 </template>
@@ -56,13 +56,14 @@ function generateSRC(UserName, Repo) {
   width: 100vw;
 }
 
+/*
 .gh-box-img {
   width: 450px;
   height: 225px;
 }
 
 @media only screen and (max-width: 768px) {
-  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  // CSS that should be displayed if width is equal to or less than 800px goes here
   .gh-box-img {
     width: auto;
     height: auto;
@@ -70,7 +71,7 @@ function generateSRC(UserName, Repo) {
     max-height: 225px !important;
   }
 }
-
+*/
 RouterLink {
   color: inherit !important;
   text-decoration: none !important;
