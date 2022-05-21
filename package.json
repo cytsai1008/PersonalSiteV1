@@ -14,7 +14,7 @@
     "pinia": "2.0.14",
     "postcss": "8.4.14",
     "tailwindcss": "^3",
-    "tocas": "4.0.3",
+    "tocas": "4.0.4",
     "vue": "3.2.35",
     "vue-fixed-header": "3.2.15",
     "vue-router": "4.0.15"
