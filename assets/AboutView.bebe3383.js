@@ -1,1 +1,0 @@
-import{o as t,c as a,a as s,u as n,H as o,w as l,F as u,b as e}from"./index.cc9082e7.js";const c=e("title",null,"About",-1),r=e("main",null,null,-1),p={name:"AboutView",setup(_){return(i,d)=>(t(),a(u,null,[s(n(o),null,{default:l(()=>[c]),_:1}),r],64))}};export{p as default};
