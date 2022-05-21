@@ -1,11 +1,11 @@
 <script setup>
 /*
-import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "@/components/HelloWorld.vue";
 */
 //import "tocas/dist/tocas.min.css";
 //import "tocas/dist/tocas.min.js";
 // import { Head } from "@vueuse/head";
+import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <!--
@@ -166,6 +166,20 @@ export default {
             class="ts-text is-undecorated is-external-link"
             >Tocas UI</a
           >
+          <span>, </span>
+          <a
+            href="https://tailwindcss.com"
+            target="_blank"
+            class="ts-text is-undecorated is-external-link"
+            >Tailwind CSS</a
+          >
+          <span>, </span>
+          <a
+            href="https://vuejs.org"
+            target="_blank"
+            class="ts-text is-undecorated is-external-link"
+            >Vue.js</a
+          >
         </div>
       </div>
     </div>
@@ -292,10 +306,12 @@ nav a:first-of-type {
 header {
   background-color: var(--ts-gray-100);
 }
+
 footer {
   background-color: var(--ts-gray-100);
   height: 5.5rem;
 }
+
 RouterLink {
   color: inherit;
   text-decoration: none;
