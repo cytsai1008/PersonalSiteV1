@@ -41,8 +41,25 @@ function generateSRC(UserName, Repo) {
         <!-- box -->
       </div>
     </div>
-    <div class="ts-container is-fluid">
+    <div class="container mx-auto">
       <!-- tailwind grid -->
+      <div
+        class="mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-6"
+      >
+        <div class="group relative">
+          <div
+            class="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1"
+          >
+            <img
+              :src="generateSRC('PixelGameMaker', 'PixelRPG-Python')"
+              class="w-full h-full object-center object-cover"
+              alt="GitHub Badges"
+            />
+          </div>
+          <h3 class="mt-6 text-sm text-gray-500">Name</h3>
+          <p class="text-base font-semibold text-gray-900">Description</p>
+        </div>
+      </div>
     </div>
   </main>
 </template>
@@ -84,5 +101,9 @@ RouterLink {
 
 .ts-box:hover {
   box-shadow: 0 0 15px #aaaaaa;
+}
+
+.container {
+  padding: 2rem;
 }
 </style>
