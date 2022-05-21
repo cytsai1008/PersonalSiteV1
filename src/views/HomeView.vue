@@ -136,7 +136,7 @@ function generateSRC(UserName, Repo) {
         </div>
         <div class="ts-header is-heavy is-large is-start-icon">
           <a
-            href="http://www.github.com/cytsai1008"
+            href="https://www.github.com/cytsai1008"
             class="ts-text is-undecorated is-external-link"
             target="_blank"
             ><span class="ts-icon is-github-icon"></span>GitHub Repos

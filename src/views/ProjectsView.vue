@@ -41,23 +41,33 @@ function generateSRC(UserName, Repo) {
         <!-- box -->
       </div>
     </div>
-    <div class="container mx-auto">
-      <!-- tailwind grid -->
-      <div
-        class="mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-6"
-      >
-        <div class="group relative">
-          <div
-            class="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1"
-          >
+    <div class="ts-container is-fluid">
+      <div class="ts-center">
+        <div class="ts-grid is-stackable">
+          <!-- https://bootcamp.uxdesign.cc/embed-your-github-project-on-your-react-website-ccefacc30f62 -->
+          <RouterLink to="/projects/PRPG-PY" class="column is-8-wide">
+            <!--
             <img
               :src="generateSRC('PixelGameMaker', 'PixelRPG-Python')"
-              class="w-full h-full object-center object-cover"
-              alt="GitHub Badges"
+              style="border-radius: 0.5rem"
+              alt="GitHub Repo Card"
             />
-          </div>
-          <h3 class="mt-6 text-sm text-gray-500">Name</h3>
-          <p class="text-base font-semibold text-gray-900">Description</p>
+            -->
+            <img
+              src="https://gh-card.dev/repos/PixelGameMaker/PixelRPG-Python.svg?fullname="
+              class="gh-card gh-box-shadow"
+              style="border-radius: 0.5rem"
+              alt="GitHub Repo Card"
+            />
+          </RouterLink>
+          <RouterLink to="/projects/DV" class="column is-8-wide">
+            <img
+              src="https://gh-card.dev/repos/cytsai1008/DiscordVoice.svg?fullname="
+              class="gh-card gh-box-shadow"
+              style="border-radius: 0.5rem"
+              alt="GitHub Repo Card"
+            />
+          </RouterLink>
         </div>
       </div>
     </div>
@@ -94,16 +104,18 @@ RouterLink {
   text-decoration: none !important;
 }
 
-.ts-box {
+.gh-box-shadow {
   transition: box-shadow 0.3s;
   float: left;
 }
 
-.ts-box:hover {
+.gh-box-shadow:hover {
   box-shadow: 0 0 15px #aaaaaa;
 }
 
-.container {
-  padding: 2rem;
+@media (prefers-color-scheme: dark) {
+  .gh-card {
+    filter: invert(80%);
+  }
 }
 </style>

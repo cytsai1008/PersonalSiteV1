@@ -168,13 +168,6 @@ export default {
           >
           <span>, </span>
           <a
-            href="https://tailwindcss.com"
-            target="_blank"
-            class="ts-text is-undecorated is-external-link"
-            >Tailwind CSS</a
-          >
-          <span>, </span>
-          <a
             href="https://vuejs.org"
             target="_blank"
             class="ts-text is-undecorated is-external-link"
