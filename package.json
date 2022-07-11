@@ -17,7 +17,7 @@
     "tocas": "4.0.4",
     "vue": "3.2.37",
     "vue-fixed-header": "3.2.15",
-    "vue-router": "4.1.1"
+    "vue-router": "4.1.2"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "1.1.4",
