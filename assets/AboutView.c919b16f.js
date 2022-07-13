@@ -1,0 +1,1 @@
+import{o as t,c as a,a as s,w as n,u as o,H as l,F as u,b as e}from"./index.2417d460.js";const c=e("title",null,"About",-1),r=e("main",null,null,-1),p={__name:"AboutView",setup(_){return(i,d)=>(t(),a(u,null,[s(o(l),null,{default:n(()=>[c]),_:1}),r],64))}};export{p as default};
