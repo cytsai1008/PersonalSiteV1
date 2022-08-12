@@ -27,7 +27,7 @@
     "eslint": "8.21.0",
     "eslint-plugin-vue": "9.3.0",
     "prettier": "2.7.1",
-    "vite": "2.9.14",
+    "vite": "2.9.15",
     "vue-cli-plugin-tailwind": "3.0.0"
   }
 }
