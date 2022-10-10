@@ -8,7 +8,7 @@
     "preview": "vite preview --port 5050"
   },
   "dependencies": {
-    "@vueuse/head": "0.7.10",
+    "@vueuse/head": "0.9.8",
     "autoprefixer": "10.4.8",
     "daisyui": "2.25.0",
     "pinia": "2.0.22",
